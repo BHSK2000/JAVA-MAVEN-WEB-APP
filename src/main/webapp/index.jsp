@@ -37,7 +37,7 @@
     }
 
     .login-box input[type="submit"] {
-      width: 100%;
+      width: 1000%;
       padding: 10px;
       background: #4CAF50;
       color: white;
