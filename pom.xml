@@ -53,7 +53,28 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version> <!-- Modern version compatible with Java 17 -->
             </plugin>
+                 <plugin>
+    <groupId>org.codehaus.cargo</groupId>
+    <artifactId>cargo-maven2-plugin</artifactId>
+    <version>1.10.9</version>
+    <configuration>
+        <container>
+            <containerId>tomcat9x</containerId>  <!-- or tomcat10x if you're on Tomcat 10 -->
+            <type>remote</type>
+        </container>
+        <configuration>
+            <type>runtime</type>
+            <properties>
+                <cargo.remote.uri>http://54.198.149.2:8080/manager/text</cargo.remote.uri>
+                <cargo.remote.username>jenkins</cargo.remote.username>
+                <cargo.remote.password>jenkins123</cargo.remote.password>
+            </properties>
+        </configuration>
+    </configuration>
+</plugin>
+
         </plugins>
+             
     </build>
 
 </project>
