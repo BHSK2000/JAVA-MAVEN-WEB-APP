@@ -71,7 +71,7 @@
   <div class="login-box">
     <h2>Login</h2>
     <form>
-      <input type="text" placeholder="Username(yaswanth raj)" required>
+      <input type="text" placeholder="Username(yaswanth raj kumar)" required>
       <input type="password" placeholder="Password" required>
       <input type="submit" value="Login">
     </form>
